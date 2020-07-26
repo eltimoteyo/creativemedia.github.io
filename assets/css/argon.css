@@ -5708,7 +5708,7 @@ input[type='button'].btn-block
     word-wrap: break-word;
 
     border: .0625rem solid rgba(0, 0, 0, .05);
-    border-radius: .25rem; 
+    border-radius: 1rem; 
     background-color: #fff;
     background-clip: border-box;
 }
@@ -16332,7 +16332,7 @@ textarea[resize='horizontal']
 }
 .navbar-transparent .navbar-toggler-icon
 {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255, 255, 255, 0.95)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgb(94, 191, 234)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
 }
 
 @media (min-width: 768px)
@@ -18764,4 +18764,42 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 {
     right: 10px;
     left: auto;
+}
+#actionBar {
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+#actionBar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: #ffffff;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0 3px;
+}
+
+ #actionBar>a {
+    font-size: 1.5em;
+    margin: 1%;
+    height: 100%;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    background: #99bae1;
+    border-radius: 5px;
+    text-align: center;
+}
+#actionBar>.facebook {
+    flex: 1;
+}
+#actionBar>.Watsapp {
+    flex: 1;
+}
+#actionBar>.call-phone {
+    flex: 3;
+}
+  
 }
